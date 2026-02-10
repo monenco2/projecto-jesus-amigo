@@ -1,0 +1,199 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fondo general */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(to bottom, #fff8e1, #ffffff);
+    color: #1e293b;
+}
+
+/* ================= HEADER ================= */
+header {
+    background: linear-gradient(135deg, #1565c0, #1e88e5);
+    padding: 35px 20px;
+    text-align: center;
+    color: white;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+}
+
+header h1 {
+    font-size: 2.4rem;
+    margin-bottom: 8px;
+}
+
+header p {
+    font-size: 1.1rem;
+    opacity: 0.95;
+}
+
+/* ================= SECCIONES ================= */
+section {
+    padding: 45px 20px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+h2 {
+    text-align: center;
+    font-size: 1.9rem;
+    color: #1565c0;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+h2::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(to right, #fbc02d, #1e88e5);
+    margin: 10px auto 0;
+    border-radius: 10px;
+}
+
+/* ================= REQUISITOS ================= */
+ul {
+    background: white;
+    padding: 30px 40px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+}
+
+ul li {
+    margin-bottom: 12px;
+    font-size: 1.05rem;
+}
+
+/* ================= ASIGNATURAS ================= */
+.asignaturas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 30px;
+}
+
+/* ================= CARDS ================= */
+.card {
+    background: white;
+    border-radius: 18px;
+    padding: 30px 20px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #1565c0;
+    cursor: pointer;
+    border-top: 6px solid #fbc02d;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+    transition: all 0.35s ease;
+    text-decoration: none;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 18px 40px rgba(0,0,0,0.2);
+    background: linear-gradient(to bottom, #ffffff, #e3f2fd);
+    color: #0d47a1;
+}
+
+/* ================= FOOTER ================= */
+footer {
+    margin-top: 60px;
+    padding: 25px;
+    text-align: center;
+    background: linear-gradient(135deg, #fbc02d, #fff176);
+    color: #1565c0;
+    font-weight: bold;
+    box-shadow: 0 -4px 15px rgba(0,0,0,0.15);
+}
+
+
+.card {
+    text-decoration: none;
+    color: #4e342e;
+
+}
+/* ================= HEADER PROGRAMAS ================= */
+.header-programas {
+    background: linear-gradient(135deg, #1565c0, #1e88e5);
+    padding: 40px 20px;
+}
+
+.header-contenido {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+.header-imagen {
+    flex: 1;
+    text-align: center;
+}
+
+.header-imagen img {
+    max-width: 230px;
+    width: 100%;
+    border-radius: 18px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+}
+
+.header-texto {
+    flex: 2;
+    color: white;
+}
+
+.header-texto h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.header-texto p {
+    font-size: 1.15rem;
+    opacity: 0.95;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .header-contenido {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header-imagen img {
+        max-width: 180px;
+    }
+}
+.requisitos-contenido {
+    display: flex;
+    align-items: stretch; /* 🔥 clave */
+    gap: 40px;
+    margin-top: 35px;
+}
+
+.requisitos-imagen {
+    flex: 1;
+    display: flex;
+    align-items: center;      /* centra vertical */
+    justify-content: center;  /* centra horizontal */
+}
+
+.requisitos-imagen img {
+    width: 100%;
+    max-width: 320px;
+    height: 100%;
+    max-height: 220px;
+    object-fit: cover;        /* 🔥 clave */
+    border-radius: 20px;
+    box-shadow: 0 12px 28px rgba(0,0,0,0.18);
+}
+
+.requisitos-texto {
+    flex: 2;
+    display: flex;
+    align-items: center;
+}
