@@ -4,104 +4,102 @@
     <meta charset="UTF-8">
     <title>Colegio Ejemplo</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- CSS EXTERNO (OPCIONAL) -->
     <link rel="stylesheet" href="style.css">
-
-    <!-- ESTILO DE RESPALDO -->
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, Helvetica, sans-serif;
-            background: #ffffff;
-            color: #000;
-        }
-
-        header, footer {
-            text-align: center;
-            padding: 20px;
-        }
-
-        main {
-            padding: 20px;
-        }
-
-        a {
-            display: block;
-            margin: 8px 0;
-        }
-
-        /* ===== CONTENEDOR SECCIÓN CENTRADO ===== */
-        main section {
-            max-width: 1200px;   /* Limita ancho total */
-            margin: 0 auto;      /* Centra horizontalmente */
-            display: grid;
-            grid-template-columns: 2fr 1fr; /* Dos columnas */
-            gap: 40px;
-            padding: 40px;
-            background: #ffffff;
-            border-radius: 18px;
-            box-shadow: 0 25px 50px rgba(0,0,0,0.25);
-        }
-
-        /* ===== IMÁGENES DENTRO DE SECCIÓN ===== */
-        main section img {
-            width: 50%;
-            height: auto;
-            display: block;
-            border-radius: 12px;
-            margin-bottom: 20px;
-        }
-
-        /* ===== RESPONSIVE ===== */
-        @media (max-width: 900px) {
-            main section {
-                grid-template-columns: 1fr;
-            }
-        }
-    </style>
 </head>
 
 <body>
 
-<header>
-    <h1>Colegio Ejemplo</h1>
-    <p>Educación con valores, compromiso y futuro</p>
+<!-- ==============================
+     NAVBAR
+============================== -->
+<header class="navbar">
+
+    <div class="logo">
+        <a href="http://127.0.0.1:5500/inicio/index.html#">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/3/3a/Logo_placeholder.png" alt="Logo">
+        </a>
+    </div>
+
+    <nav class="menu">
+
+        <div class="dropdown">
+            <button class="dropbtn">I.E Jesús Amigo</button>
+            <div class="dropdown-content">
+                <a href="escuela.html">La Escuela</a>
+                <a href="#">Nuestro Personal</a>
+                <a href="#">Exalumnos</a>
+                <a href="http://127.0.0.1:5500/contactanos/contacto.html">Contáctanos</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <button class="dropbtn">Buen Comienzo</button>
+            <div class="dropdown-content">
+                <a href="#">Información General</a>
+                <a href="#">Inscripciones</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <button class="dropbtn">Programas</button>
+            <div class="dropdown-content">
+                <a href="#">Primaria</a>
+                <a href="#">Secundaria</a>
+                <a href="#">Actividades Extracurriculares</a>
+            </div>
+        </div>
+
+    </nav>
+
 </header>
 
+<!-- ==============================
+     HERO / TÍTULO PRINCIPAL
+============================== -->
+<section class="hero">
+    <h1>Colegio Ejemplo</h1>
+    <p>Educación con valores, compromiso y futuro</p>
+</section>
+
+<!-- ==============================
+     CONTENIDO
+============================== -->
 <main>
 
-    <!-- CONTENEDOR EN DOS COLUMNAS -->
-    <section>
+    <section class="contenido">
 
         <!-- COLUMNA IZQUIERDA -->
         <div class="columna-izquierda">
-            <img src="https://static.wixstatic.com/media/8b184b_c68c8fc7a1504a4b87cb41fc1075265a~mv2.jpg/v1/fill/w_489,h_600,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/8b184b_c68c8fc7a1504a4b87cb41fc1075265a~mv2.jpg" alt="Instalaciones del colegio">
+
+            <img src="https://static.wixstatic.com/media/8b184b_c68c8fc7a1504a4b87cb41fc1075265a~mv2.jpg" alt="Instalaciones del colegio">
 
             <h2>Acerca de Nosotros</h2>
             <p>
-                
-Somos una institución educativa comprometida con brindar una educación de excelencia, fomentando el desarrollo integral de nuestros estudiantes. Haz clic aquí para obtener más información y descubrir por qué somos la mejor opción para el futuro de tus hijos.
+                Somos una institución educativa comprometida con brindar una educación de excelencia,
+                fomentando el desarrollo integral de nuestros estudiantes.
             </p>
 
             <h3>Misión</h3>
             <p>
-                Brindar atención integral a las comunidades de impacto, priorizando las poblaciones que se encuentran en situación de vulnerabilidad, con el objetivo de lograr un desarrollo humano sostenible.
+                Brindar atención integral a las comunidades de impacto, priorizando las poblaciones
+                en situación de vulnerabilidad.
             </p>
 
             <h3>Visión</h3>
             <p>
-                La Corporación Educativa y Cultural Jesús Amigo será una organización reconocida por la transformación de comunidades, a través de la formación integral de seres humanos que aportarán al desarrollo social sostenible.
+                Ser una organización reconocida por la transformación de comunidades,
+                a través de la formación integral.
             </p>
 
-            <img src="https://static.wixstatic.com/media/8b184b_cb62a50877b541f29fb4a3b82fa0d327~mv2.jpg/v1/crop/x_0,y_0,w_1600,h_749/fill/w_809,h_383,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/491409267_1357384762474693_3198021192012440065_n.jpg" alt="Vida escolar">
+            <img src="https://static.wixstatic.com/media/8b184b_cb62a50877b541f29fb4a3b82fa0d327~mv2.jpg" alt="Vida escolar">
+
         </div>
 
         <!-- COLUMNA DERECHA -->
         <div class="columna-derecha">
             <h2>Accesos Institucionales</h2>
 
-            <nav>
+            <nav class="accesos">
                 <a href="personal.html">Nuestro personal</a>
                 <a href="exalumnos.html">Exalumnos</a>
                 <a href="escuela.html">La escuela</a>
